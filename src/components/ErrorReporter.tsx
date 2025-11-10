@@ -11,7 +11,7 @@ type ReporterProps = {
 export default function ErrorReporter({ error, reset }: ReporterProps) {
   /** ─ Instrumentación compartida por todas las rutas ─ */
   const lastOverlayMsg = useRef<string>("");
-  // ✅ useRef debe inicializarse; usa un tipo portable para setInterval (web/node)
+  // useRef debe inicializarse; usa un tipo portable para setInterval (web/node)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
