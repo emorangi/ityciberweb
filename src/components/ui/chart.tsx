@@ -112,6 +112,7 @@ type ChartTooltipContentExtras = {
   nameKey?: string
   labelKey?: string
   color?: string
+  labelClassName?: string
 }
 
 type ChartTooltipContentProps = LooseTooltipProps &
