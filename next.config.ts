@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
   // (Next la ignorará si usa Webpack en prod; no rompe nada).
   // Si en el futuro quieres forzar Turbopack en prod, tendríamos que ajustarlo
   // en experimental, pero no es necesario para resolver el deploy.
-  // @ts-expect-error - campo específico de tu setup
+  // ts-expect-error - campo específico de tu setup
   turbopack: {
     rules: {
       "*.{jsx,tsx}": {
