@@ -8,19 +8,19 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 ## Tabla de contenido
 
-- \[Stack y requisitos](#stack-y-requisitos)
+- [Stack y requisitos](#stack-y-requisitos)
 
-- \[Estructura general](#estructura-general)
+- [Estructura general](#estructura-general)
 
-- \[Dónde está cada cosa (mapa rápido)](#dónde-está-cada-cosa-mapa-rápido)
+- [Dónde está cada cosa (mapa rápido)](#dónde-está-cada-cosa-mapa-rápido)
 
-- \[Cómo rescatar contenido](#cómo-rescatar-contenido)
+- [Cómo rescatar contenido](#cómo-rescatar-contenido)
 
-- \[Convenciones de componentes y animaciones](#convenciones-de-componentes-y-animaciones)
+- [Convenciones de componentes y animaciones](#convenciones-de-componentes-y-animaciones)
 
-- \[Scripts típicos](#scripts-típicos)
+- [Scripts típicos](#scripts-típicos)
 
-- \[Créditos y notas](#créditos-y-notas)
+- [Créditos y notas](#créditos-y-notas)
 
 
 
@@ -197,6 +197,7 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 ## Créditos y notas
 
 - Estructura documentada y optimizada en `OPTIMIZACION.md` con comparativas “antes/después” por sección (Hero, Services, Projects, Sectors, FAQ, Contact, Footer).  
+
 
 
 
