@@ -96,35 +96,19 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 ## Dónde está cada cosa (mapa rápido)
 
-
-
 | Necesitas… | Mira en… | Notas |
-
 |---|---|---|
-
-| \*\*Textos de la web\*\* (servicios, proyectos, sectores, FAQs, navegación, footer) | `src/lib/data/sections.ts` | Archivo ÚNICO de contenido: perfecto para copiar a otra base de código o transformar a CMS/JSON. |
-
-| \*\*Datos globales\*\* (colores, timings de animación, contacto, métricas) | `src/lib/constants.ts` | Cambios aquí afectan toda la UI en cadena. Útil para portar branding/vars. |
-
-| \*\*Animaciones\*\* reutilizables | `src/lib/utils/animations.ts` | Variantes `fadeInUp/Left/Right`, `scaleIn`, `slideUp`, `createStaggerVariant()`, y `scrollToSection()`. |
-
-| \*\*Hooks\*\* reutilizables | `src/hooks/` | `usePreloader()`, `useTypingEffect()`, `useActiveSection()` encapsulan lógica común. |
-
-| \*\*Cabeceras y tarjetas\*\* estándar | `src/components/common/` | `SectionHeader`, `AnimatedCard`, `AnimatedIcon`, `BackgroundBlobs`… componentes “lego” para nuevas secciones. |
-
-| \*\*Imágenes y estáticos\*\* | `public/` | Copia directa a cualquier proyecto. |
-
-| \*\*Notas del refactor\*\* | `OPTIMIZACION.md` | Explica el “antes/después” y la lógica de la arquitectura. Útil para entender decisiones. |
-
-
+| **Textos de la web** (servicios, proyectos, sectores, FAQs, navegación, footer) | `src/lib/data/sections.ts` | Archivo ÚNICO de contenido: perfecto para copiar a otra base de código o transformar a CMS/JSON. |
+| **Datos globales** (colores, timings de animación, contacto, métricas) | `src/lib/constants.ts` | Cambios aquí afectan toda la UI en cadena. Útil para portar branding/vars. |
+| **Animaciones** reutilizables | `src/lib/utils/animations.ts` | Variantes `fadeInUp/Left/Right`, `scaleIn`, `slideUp`, `createStaggerVariant()`, y `scrollToSection()`. |
+| **Hooks** reutilizables | `src/hooks/` | `usePreloader()`, `useTypingEffect()`, `useActiveSection()` encapsulan lógica común. |
+| **Cabeceras y tarjetas** estándar | `src/components/common/` | `SectionHeader`, `AnimatedCard`, `AnimatedIcon`, `BackgroundBlobs`… componentes “lego” para nuevas secciones. |
+| **Imágenes y estáticos** | `public/` | Copia directa a cualquier proyecto. |
+| **Notas del refactor** | `OPTIMIZACION.md` | Explica el “antes/después” y la lógica de la arquitectura. Útil para entender decisiones. |
 
 ---
 
-
-
 ## Cómo rescatar contenido
-
-
 
 ### 1) Solo textos (contenido puro)
 
@@ -197,6 +181,7 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 ## Créditos y notas
 
 - Estructura documentada y optimizada en `OPTIMIZACION.md` con comparativas “antes/después” por sección (Hero, Services, Projects, Sectors, FAQ, Contact, Footer).  
+
 
 
 
