@@ -1,4 +1,4 @@
-\# ITyCIBER Web — Guía de estructura y rescate de contenido
+# ITyCIBER Web — Guía de estructura y rescate de contenido
 
 
 
@@ -6,21 +6,21 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Tabla de contenido
+## Tabla de contenido
 
-\- \[Stack y requisitos](#stack-y-requisitos)
+- \[Stack y requisitos](#stack-y-requisitos)
 
-\- \[Estructura general](#estructura-general)
+- \[Estructura general](#estructura-general)
 
-\- \[Dónde está cada cosa (mapa rápido)](#dónde-está-cada-cosa-mapa-rápido)
+- \[Dónde está cada cosa (mapa rápido)](#dónde-está-cada-cosa-mapa-rápido)
 
-\- \[Cómo rescatar contenido](#cómo-rescatar-contenido)
+- \[Cómo rescatar contenido](#cómo-rescatar-contenido)
 
-\- \[Convenciones de componentes y animaciones](#convenciones-de-componentes-y-animaciones)
+- \[Convenciones de componentes y animaciones](#convenciones-de-componentes-y-animaciones)
 
-\- \[Scripts típicos](#scripts-típicos)
+- \[Scripts típicos](#scripts-típicos)
 
-\- \[Créditos y notas](#créditos-y-notas)
+- \[Créditos y notas](#créditos-y-notas)
 
 
 
@@ -28,13 +28,13 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Stack y requisitos
+## Stack y requisitos
 
-\- \*\*Next.js + React + TS\*\*  
+- \*\*Next.js + React + TS\*\*  
 
-\- \*\*PostCSS\*\* y utilidades (config en `postcss.config.mjs`).  
+- \*\*PostCSS\*\* y utilidades (config en `postcss.config.mjs`).  
 
-\- Gestor de paquetes: el repo incluye `package-lock.json` (npm) y `bun.lock` (Bun). Usa \*\*uno u otro\*\* según tu entorno.
+- Gestor de paquetes: el repo incluye `package-lock.json` (npm) y `bun.lock` (Bun). Usa \*\*uno u otro\*\* según tu entorno.
 
 
 
@@ -46,7 +46,7 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Estructura general
+## Estructura general
 
 
 
@@ -94,7 +94,7 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Dónde está cada cosa (mapa rápido)
+## Dónde está cada cosa (mapa rápido)
 
 
 
@@ -122,45 +122,45 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Cómo rescatar contenido
+## Cómo rescatar contenido
 
 
 
-\### 1) Solo textos (contenido puro)
+### 1) Solo textos (contenido puro)
 
-\- Copia \*\*solo\*\* `src/lib/data/sections.ts`.  
+- Copia \*\*solo\*\* `src/lib/data/sections.ts`.  
 
-\- Si tu nuevo proyecto no es TS, transpílalo a JS o exporta el contenido como \*\*JSON\*\* (estructura ya viene separada por secciones).
-
-
-
-\### 2) Branding/vars globales
-
-\- Copia `src/lib/constants.ts` y ajusta \*\*colores / timings / contacto\*\*.  
-
-\- Ventaja: centralizas decisiones visuales y de movimiento desde el inicio.
+- Si tu nuevo proyecto no es TS, transpílalo a JS o exporta el contenido como \*\*JSON\*\* (estructura ya viene separada por secciones).
 
 
 
-\### 3) Animaciones y UX
+### 2) Branding/vars globales
 
-\- Copia `src/lib/utils/animations.ts` y los hooks de `src/hooks/`.  
+- Copia `src/lib/constants.ts` y ajusta \*\*colores / timings / contacto\*\*.  
 
-\- Integra `scrollToSection()` y variantes `fadeIn\*` para una experiencia consistente.
-
-
-
-\### 4) UI base y patrones
-
-\- Copia los componentes de `src/components/common/` para montar secciones rápidamente (`SectionHeader` + `AnimatedCard/AnimatedIcon` + `BackgroundBlobs`).  
-
-\- Esto reduce código duplicado y acelera la maquetación.
+- Ventaja: centralizas decisiones visuales y de movimiento desde el inicio.
 
 
 
-\### 5) Activos
+### 3) Animaciones y UX
 
-\- Arrastra la carpeta `public/` o los ficheros necesarios (logos, imágenes de proyectos, favicons).
+- Copia `src/lib/utils/animations.ts` y los hooks de `src/hooks/`.  
+
+- Integra `scrollToSection()` y variantes `fadeIn\*` para una experiencia consistente.
+
+
+
+### 4) UI base y patrones
+
+- Copia los componentes de `src/components/common/` para montar secciones rápidamente (`SectionHeader` + `AnimatedCard/AnimatedIcon` + `BackgroundBlobs`).  
+
+- Esto reduce código duplicado y acelera la maquetación.
+
+
+
+### 5) Activos
+
+- Arrastra la carpeta `public/` o los ficheros necesarios (logos, imágenes de proyectos, favicons).
 
 
 
@@ -172,15 +172,15 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Convenciones de componentes y animaciones
+## Convenciones de componentes y animaciones
 
 
 
-\- \*\*SectionHeader\*\*: cabecera estándar para cualquier sección (badge, icono, título con highlight y descripción).  
+- \*\*SectionHeader\*\*: cabecera estándar para cualquier sección (badge, icono, título con highlight y descripción).  
 
-\- \*\*AnimatedCard / AnimatedIcon / BackgroundBlobs\*\*: piezas visuales con animaciones predefinidas y estilo consistente.  
+- \*\*AnimatedCard / AnimatedIcon / BackgroundBlobs\*\*: piezas visuales con animaciones predefinidas y estilo consistente.  
 
-\- \*\*Hooks\*\*: 
+- \*\*Hooks\*\*: 
 
 &nbsp; - `usePreloader()` maneja el “loading” inicial y overflow del `<body>`.  
 
@@ -194,9 +194,10 @@ Web corporativa de \*\*ityciber.es\*\* construida con \*\*Next.js + React + Type
 
 
 
-\## Créditos y notas
+## Créditos y notas
 
-\- Estructura documentada y optimizada en `OPTIMIZACION.md` con comparativas “antes/después” por sección (Hero, Services, Projects, Sectors, FAQ, Contact, Footer).  
+- Estructura documentada y optimizada en `OPTIMIZACION.md` con comparativas “antes/después” por sección (Hero, Services, Projects, Sectors, FAQ, Contact, Footer).  
+
 
 
 
